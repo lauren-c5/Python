@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haunted Haven & Python Games</title>
-
-    <link rel="stylesheet" href="https://pyscript.net/latest/core.css" />
-    <script type="module" src="https://pyscript.net/latest/core.js"></script>
-
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    
     <style>
         body {
             background-color: #121212;
@@ -21,7 +21,7 @@
         #game-container {
             background-color: #1a1a1a;
             border: 2px solid #333;
-            padding: 20px;
+            padding: 10px;
             min-height: 400px;
             border-radius: 5px;
         }
@@ -34,16 +34,7 @@
     <hr>
 
     <div id="game-container">
-        <script type="py-config">
-            type = "mpy"
-            [[files]]
-            from = "."
-            include = ["Haunted_Haven.py"]
-        </script>
-
-        <mpy-terminal></mpy-terminal>
-
-        <script type="mpy" src="Haunted_Haven.py" target="mpy-terminal"></script>
+        <script type="py" src="Haunted_Haven.py" terminal worker></script>
     </div>
 
 </body>
