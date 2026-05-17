@@ -22,7 +22,7 @@ async def main():
             choice3 = choice3.lower()
 
             if choice3 == "brass":
-                print("A ghost rose from the ashes and took your soul. Game over.")
+                print("A ghost has risen from the ashes and took your soul. Game over.")
             elif choice3 == "bronze":
                 print("The Teletubbies caught you and beat you up. Game over.")
             elif choice3 == "black":
